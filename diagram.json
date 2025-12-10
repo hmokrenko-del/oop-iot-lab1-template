@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "author": "OOP IoT Lab 1",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": -20,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -70,
+      "left": 170,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 10,
+      "left": 170,
+      "attrs": {
+        "color": "green"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:2",
+      "led1:A",
+      "green",
+      [
+        "h40",
+        "v-20"
+      ]
+    ],
+    [
+      "esp:GND.1",
+      "led1:C",
+      "black",
+      [
+        "h0",
+        "v0"
+      ]
+    ],
+    [
+      "esp:4",
+      "led2:A",
+      "green",
+      [
+        "h40",
+        "v0"
+      ]
+    ],
+    [
+      "esp:GND.2",
+      "led2:C",
+      "black",
+      [
+        "h0",
+        "v0"
+      ]
+    ]
+  ]
+}
